@@ -1,0 +1,10 @@
+东方煤炭电子交易中心
+项目简介：
+基于 React 开发的 B2C 竞价平台，提供竞价场次、物资竞价、商品挂牌和订单管理等功能，支持用户浏览商品、参与竞价及团队管理。  
+技术栈： React | Typescript | Formily | Zustand | Lexical | Vite | Pnpm | Prisma  
+主要职责：  
+● 结合 Zustand 与 React Context 实现全局状态管理，减少不必要的渲染，提升页面响应速度。  
+● 基于 Lexical 开发并维护定制化富文本组件，满足业务需求。  
+● 使用 Prisma 编写 Node.js 脚本，将富文本 JSON 数据转换为 HTML，支持新旧平台的数据顺利迁移。  
+● 运用 Vite 提速项目构建，优化开发效率。  
+● 利用 Pnpm 快速搭建 monorepo，统一管理 B 端、C 端代码以及公共组件，提升整体协同开发效率。
