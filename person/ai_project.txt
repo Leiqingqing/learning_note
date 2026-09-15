@@ -1,14 +1,12 @@
 AI 电子伴侣企业级项目
 项目简介：
 基于 Next.js、Hono 与 LangGraph 开发的 AI 电子伴侣平台，包含用户端、管理端和 API 服务，支持智能对话、长期记忆、情绪与意图识别、关系阶段管理、Agent 群聊及 Skill 扩展，并实现认证鉴权、订阅套餐和边缘部署等完整业务能力。
-技术栈： Next.js | React | TypeScript | Tailwind CSS | shadcn/ui | TanStack Query | Hono | Zod | Turborepo | Pnpm | Cloudflare Workers
+技术栈： Next.js | React | TypeScript | Tailwind CSS | Hono | Zod | Turborepo | Pnpm | Cloudflare Workers
 主要职责：
 ● 使用 Turborepo 与 Pnpm 搭建 Web、Admin、API 三端 Monorepo，统一共享类型、设计规范、依赖版本及环境变量配置。
 ● 基于 Hono、Zod 与 Drizzle ORM 设计分层 API 和数据访问能力，完成 D1 数据迁移、种子数据及 Cloudflare Workers 边缘部署。
-● 设计 Access Token、Refresh Token 与 Session 认证体系，实现 Token 轮换、无感续签、退出登录、GitHub OAuth 及角色权限管理。
 ● 接入 DeepSeek 等 OpenAI-compatible 模型，结合 SSE 实现流式对话，并支持用户配置模型服务及异常降级。
 ● 基于 LangChain 与 LangGraph 编排安全检测、意图识别、情绪路由、关系阶段、回复策略和质量检查链路，提升回复的安全性与一致性。
 ● 设计会话、消息与长期记忆模型，实现历史消息分页恢复、会话摘要、记忆抽取与管理，形成可持续更新的 Agent 记忆闭环。
 ● 实现多 Agent 群聊、智能发言权判断、Agent 间互相回应及 @ 提及机制，并通过乐观更新改善聊天交互体验。
 ● 构建可扩展 Skill 系统，覆盖 Prompt、Workflow、Tool 与 Background Skill，完善选择器、权限策略、运行时、审计和评测能力。
-● 使用 Cloudflare R2 管理头像文件，结合 D1 保存元数据，并完成订阅套餐、主动关怀和用户反馈闭环等业务模块。
